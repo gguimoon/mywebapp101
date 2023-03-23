@@ -24,7 +24,7 @@
                     </script>
         ");
 
-    $con = mysqli_connect("localhost", "user1", "12345", "sample");
+    $con = mysqli_connect("tutorial-db-instance.cmh7xi9uudoy.ap-northeast-2.rds.amazonaws.com", "tutorial_user", "srch&lite5", "mysample");
 
     for($i=0; $i<count($_POST["item"]); $i++){
         $num = $_POST["item"][$i];

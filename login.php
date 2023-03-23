@@ -2,7 +2,7 @@
     $id   = $_POST["id"];
     $pass = $_POST["pass"];
 
-   $con = mysqli_connect("localhost", "user1", "12345", "sample");
+   $con = mysqli_connect("tutorial-db-instance.cmh7xi9uudoy.ap-northeast-2.rds.amazonaws.com", "tutorial_user", "srch&lite5", "mysample");
    $sql = "select * from members where id='$id'";
    $result = mysqli_query($con, $sql);
 
